@@ -1,2 +1,2 @@
-# Universe-Website
+# Universe
 Explore the universe
