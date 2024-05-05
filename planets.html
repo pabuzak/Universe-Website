@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!--Title of website-->
+      <title>Universe</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Bootstrap 4 link to HTML-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!--CSS link to HTML-->
+      <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-md bg-dark fixed-top">
+    <div class="container-fluid">
+<!--Navigation Bar Website Name-->  
+      <div class="navbar-header">         
+        <a class="navbar-brand">Universe</a>
+      </div>
+<!--Navigation Bar Links-->
+      <ul class="navbar-nav">  
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="planets.html">Planets</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="missions.html">Missions</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="more.html">More</a></li>
+      </ul>
+    </div>
+  </nav>
+<!--Carousel-->
+<div id="demo" class="carousel slide fixed" data-ride="carousel">
+<!--The slideshow-->
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <a href="#" title="Earth Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+   <img src="images/image_processing/universe_sandbox/universe_sandbox7.jpg" alt="planet1">
+   </a> 
+      <div class="carousel-caption">
+        <h5>Earth</h5>
+        <p>Our Home. The third planet from the Sun.</p>
+        <p><a href="#earthinfo" class="btn" id="indexbtn">Learn more</a></p>
+          </div>
+        </div>
+        
+       <div class="carousel-item">
+        <a href="#" title="Mars Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+        <img src="images/image_processing/universe_sandbox/universe_sandbox8.jpg" alt="planet2">
+        </a>
+       <div class="carousel-caption">
+         <h5>Mars</h5>
+           <p>The fourth planet from the Sun.</p>
+           <p><a href="#marsinfo" class="btn" id="indexbtn2">Learn more</a></p>
+         </div>
+       </div>
+
+       <div class="carousel-item">
+        <a href="#" title="Jupiter Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+          <img src="images/image_processing/universe_sandbox/universe_sandbox6.jpg" alt="planet3">
+          </a>
+        <div class="carousel-caption">
+          <h5>Jupiter</h5>
+          <p>The fifth planet from the Sun.</p>
+          <p><a href="#jupiterinfo" class="btn" id="indexbtn3">Learn more</a></p>
+        </div>
+      </div>
+
+       <div class="carousel-item">
+        <a href="#" title="Venus Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+          <img src="images/image_processing/universe_sandbox/universe_sandbox10.jpg" alt="planet4">
+        </a>
+        <div class="carousel-caption">
+          <h5>Venus</h5>
+          <p title="planet4text">The second planet from the Sun.</p>
+          <p><a href="#venusinfo" class="btn" id="indexbtn4">Learn more</a></p>
+        </div>
+       </div>
+
+       <div class="carousel-item">
+        <a href="#" title="Saturn Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+          <img src="images/image_processing/universe_sandbox/universe_sandbox12.jpg" alt="planet5">
+       </a>
+        <div class="carousel-caption">
+          <h5>Saturn</h5>
+          <p>The sixth planet from the Sun.</p>
+          <p><a href="#saturninfo" class="btn" id="indexbtn5">Learn more</a></p>
+        </div>
+       </div>
+
+       <div class="carousel-item">
+        <a href="#" title="Uranus Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+          <img src="images/image_processing/universe_sandbox/universe_sandbox13.jpg" alt="planet6">
+          </a>
+        <div class="carousel-caption">
+          <h5>Uranus</h5>
+          <p>The seventh planet from the Sun.</p>
+          <p><a href="#uranusinfo" class="btn" id="indexbtn6">Learn more</a></p>
+        </div>
+       </div>
+    
+       <div class="carousel-item">
+        <a href="#" title="Mercury Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+          <img src="images/image_processing/universe_sandbox/universe_sandbox9.jpg" alt="planet7">
+       </a>
+        <div class="carousel-caption">
+          <h5>Mercury</h5>
+          <p>The first planet from the Sun.</p>
+          <p><a href="#mercuryinfo" class="btn" id="indexbtn7">Learn more</a></p>
+        </div>
+       </div>
+
+       <div class="carousel-item">
+        <a href="#" title="Neptune Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+        <img src="images/image_processing/universe_sandbox/universe_sandbox11.jpg" alt="planet8">
+        </a>
+       <div class="carousel-caption">
+        <h5>Neptune</h5>
+        <p>The eighth planet from the Sun.</p>
+        <p><a href="#neptuneinfo" class="btn" id="indexbtn8">Learn more</a></p>
+      </div>
+     </div>
+    </div>
+<!--Left and right controls-->
+<a class="carousel-control-prev" href="#demo" data-slide="prev" role="button">
+  <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#demo" data-slide="next" role="button">
+  <span aria-hidden="true" class="carousel-control-next-icon"></span>
+</a>
+</div>
+<!-- Information -->
+<div class="planets">
+<!-- Earth Section -->
+  <div class="earth">
+    <div class="row">
+      <div class="col-md-6">
+        <a href="#" title="Earth Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+        <img src="images/image_processing/small_universe_sandbox/small_universe_sandbox7.png" id="earthinfo" alt="planetearth">
+        </a>
+      </div>
+      <div class="col-sm-6 text-center">
+        <h2>Earth</h2>
+        <p>Our home planet and the only planet that has been discovered to have life on it due to 
+          it being the only planet with oxygen in its atmosphere. Earth spins on an axis that extends 
+          from the North Pole to the South Pole as it circles the sun. A rotation on Earth's axis takes 
+          23.934 hours, and an orbit around the sun takes 365.26 days. Earth is the fifth largest planet 
+          in our solar system, with a radius of 6,371 kilometers. Earth has two moons, the first called 'Moon'
+          and the second called '1998 QE2'.
+        </p>
+      </div>
+  </div>
+</div>
+
+<!-- Mars Section -->
+<div class="mars">
+  <div class="row">
+  <div class="col-sm-6 text-center">
+  <h2>Mars</h2>
+  <p>Mars is the fourth planet from the sun and also known as the Red Planet. The Red Planet is so named
+    because of the rusted iron in the ground giving the planet a bright red colour. Because the atmosphere
+    in Mars is very cold and thin, water is unlikely to be on the surface for an extended period of time,
+    Mars is still in the goldilocks zone (habitable zone). A rotation on Mar's axis takes 1 day and 37 minutes, 
+    and an orbit around the sun takes 687 days. Mars has two moons, the first called 'Phobos' and the second called 'Deimos'.
+    Mars has a radius of 3,389.5 kilometers.</p>
+</div>
+<div class="col-sm-6">
+  <a href="#" title="Mars Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+  <img src="images/image_processing/small_universe_sandbox/small_universe_sandbox8.png" id="marsinfo" alt="planetmars">
+  </a>
+</div>
+</div>
+</div>
+
+<!-- Jupiter Section -->
+<div class="jupiter">
+  <div class="row">
+    <div class="col-sm-6">
+      <a href="#" title="Jupiter Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+      <img src="images/image_processing/small_universe_sandbox/small_universe_sandbox6.png" id="jupiterinfo" alt="planetjupiter">
+      </a>
+    </div>
+    <div class="col-sm-6 text-center">
+      <h2>Jupiter</h2>
+      <p>Jupiter is the fifth planet from the sun and is a gas giant (a planet made of mainly gases). Jupiter is the
+      largest planet in our solar system with a radius of 69,911 kilometers. Jupiter is famous for the 'Great Red Spot', which is a giant storm on the planet
+      that has lasted for many hundread years. Jupiter atmosphere is mostly hydrogen and helium. A rotation on Jupiter's axis takes 10 hours, and an 
+      orbit around the sun takes 4,333 days. Jupiter has 79 moons, 53 of them named and the other 26 is waiting to be named. </p>
+    </div>
+</div>
+</div>
+<!-- Venus Section -->
+<div class="venus">
+  <div class="row">
+  <div class="col-sm-6 text-center">
+  <h2>Venus</h2>
+  <p>Venus is the second planet from the sun and is a terrestrial planet (a planet with a rocky surface like Mars and Earth). Venus is commonly known as Earth's twin,
+    due to the similar size of both of them. Even though Venus is the second planet from the sun, it is the hottest planet due to the 
+    sulfuric acid in it's atmosphere that traps heat. Venus' surface is dry, volanic and high volcanic mountains. A rotation on Venus' axis takes
+    116 days and 18 hours due to the planet spinning slowly in the oppositve direction of Earth, and an orbit around the sun takes 224.7 days. Venus
+    has no moons and has the radius of 6,051.8 kilometers.
+  </p>
+</div>
+<div class="col-sm-6">
+  <a href="#" title="Venus Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+  <img src="images/image_processing/small_universe_sandbox/small_universe_sandbox10.png" id="venusinfo" alt="planetvenus">
+  </a>
+</div>
+</div>
+</div>
+<!-- Saturn Section -->
+<div class="saturn">
+  <div class="row">
+    <div class="col-sm-6">
+      <a href="#" title="Saturn Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+      <img src="images/image_processing/small_universe_sandbox/small_universe_sandbox12.png" id="saturninfo" alt="planetsaturn">
+      </a>
+    </div>
+    <div class="col-sm-6 text-center">
+      <h2>Saturn</h2>
+      <p>Saturn is the sixth planet from the Sun and is a gas giant. Saturn is the second largest planet in our solar system with a radius of
+      58,232 kilometers. The planet is most commonly known due to it's unique ring surround the planet which is made up of ice and rock. Saturn's
+    atmosphere is mostly hydrogen and helium, like Jupiter. A rotation on Saturn's axis takes 10 hours and 45 minutes, and an orbit around the sun takes
+   10,756 days. Saturn has 82 moons, 62 of them named and the other 9 is waiting to be named. </p>
+    </div>
+</div>
+</div>
+<!-- Uranus Section -->
+<div class="uranus">
+  <div class="row">
+  <div class="col-sm-6 text-center">
+  <h2>Uranus</h2>
+  <p>Uranus is the seventh planet from the Sun and is an ice giant (a planet with an icy core and has overall contains more ice than gas). The planet
+    has a radius of 25,362 kilometers and has 27 moons. Uranus is known to be the sidewards planet as it spins on it's side and rotates in the opposite of Earth, like Venus.
+    It is unique for having rings, in total 13 rings, like Saturn. A rotation on Uranus' axis takes 17 hours, and an orbit around the sun takes 30,660 days. </p>
+</div>
+<div class="col-sm-6">
+  <a href="#" title="Uranus Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+  <img src="images/image_processing/small_universe_sandbox/small_universe_sandbox13.png" id="uranusinfo" alt="planeturanus">
+  </a>
+</div>
+</div>
+</div>
+<!-- Mercury Section -->
+<div class="mercury">
+  <div class="row">
+    <div class="col-sm-6">
+      <a href="#" title="Mercury Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+      <img src="images/image_processing/small_universe_sandbox/small_universe_sandbox9.png" id="mercuryinfo" alt="planetmercury">
+      </a>
+    </div>
+    <div class="col-sm-6 text-center">
+      <h2>Mercury</h2>
+      <p>Mercury is the closest planet from the Sun and is a terrestrial planet. It has no moons and is the smallest planet in our solar system with a radius of 
+        2,440 kilometers and only a tiny bit larger than our Moon. Even though, Mercury is the closest planet to the Sun, it is not the hotteset due
+        due to the thin atmospher containing mostly oxygen, sodium, hydrogen, helium and potassium. A rotation on Mercury's axis takes 59 days, and 
+        an orbit around the sun takes 175.97 days. </p>
+    </div>
+</div>
+</div>
+<!-- Neptune Section -->
+<div class="neptune">
+  <div class="row">
+  <div class="col-sm-6 text-center">
+  <h2>Neptune</h2>
+  <p>Neptune is the eighth or most furthest planet from the Sun and is a ice giant, like Uranus. There has only been one voyager to ever visit Neptune due
+    to how long it takes to go there (the distance from the Sun is 4.5 billion kilometers). Neptune is known for it's "Great Dark Spot" which was found by Voyager
+    2. It's atmosphere is mostly made of hydrogen and helium and a little bit of methane and because of methane, Neptune is a bright blue colour. A roation on 
+    Neptune's axis takes 16 hours, and an orbit around the sun takes 165 years. Neptune has 0 moons and 5 main rings.</p>
+</div>
+<div class="col-sm-6">
+  <a href="#" title="Earth Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+  <img src="images/image_processing/small_universe_sandbox/smaller_universe_sandbox11.png" id="neptuneinfo" alt="planetneptune">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!--Footer-->
+<div class="row footer">
+    <!--Footer NASA information-->
+      <div class="col-sm-6 col-lg-4">
+        <h5>About NASA</h5>
+          <p class="footer-text">NASA or 'National Aeronautics and Space Administration' is a space organisation which focuses on the civilian space program, aeronautic and space research.</p>
+        </div>
+<!--Footer links to NASA website-->
+<div class="col-sm-6 col-lg-4">
+  <h5>NASA Links</h5>
+    <ul class="footer-links">
+      <li><a onclick="window.open('https://www.nasa.gov/about/index.html')" target="_blank" href="https://www.nasa.gov/about/index.html">About</a></li>
+      <li><a onclick="window.open('https://www.nasa.gov/about/contact/index.html')" target="_blank" href="https://www.nasa.gov/about/contact/index.html">Contact</a></li>
+      <li><a onclick="window.open('https://www.shopnasa.com/')" target="_blank" href="https://www.shopnasa.com/">Stores</a></li>
+      <li><a onclick="window.open('https://www.nasa.gov/about/highlights/HP_Privacy.html')" target="_blank" href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy</a></li>
+    </ul>
+  </div>
+<!--Footer Quick Links for website-->
+  <div class="col-sm-6 col-lg-4">
+    <h5>Quick Links</h5>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="planets.html">Planets</a></li>
+      <li><a href="missions.html">Missions</a></li>
+      <li><a href="more.html">More</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+  });
+</script>
+</body>
+</html>

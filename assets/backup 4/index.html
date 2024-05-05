@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!--Title of website-->
+      <title>Universe</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Bootstrap 4 link to HTML-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!--CSS link to HTML-->
+      <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-sm bg-dark fixed-top">
+    <div class="container-fluid">
+<!--Navigation Bar Website Name-->  
+      <div class="navbar-header">        
+        <a class="navbar-brand">Universe</a>
+      </div>
+<!--Navigation Bar Links-->
+      <ul class="navbar-nav">  
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="planets.html">Planets</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="missions.html">Missions</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">More</a></li>
+      </ul>
+    </div>
+  </nav>
+<!--Carousel-->
+<div id="demo" class="carousel slide fixed" data-ride="carousel">
+<!--Indicators-->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+<!--The slideshow-->
+<div class="carousel-inner">
+  <div class="carousel-item active">
+  <a href="#" title="Mars Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="'Mars' by Kevin M. Gill">
+   <img src="images/image_processing/creative_commons/mars_by_kevin_m._gill.jpg" alt="mars">
+  </a>
+      <div class="carousel-caption">
+        <h5>Mars</h5>
+        <p>The fourth planet in our solar system may be colonized by humans to be our next home.</p>
+        <p><a href="planets.html" class="btn">More Info</a></p>
+          </div>
+        </div>
+
+       <div class="carousel-item">
+        <a href="#" title="Milky Way Galaxy Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Image taken from the game 'Universe Sandbox'">
+        <img src="images/image_processing/universe_sandbox/universe_sandbox5.jpg" alt="space">
+        </a>
+       <div class="carousel-caption">
+         <h5>Milky Way Galaxy</h5>
+           <p>Explore outer space in our galaxy with missions from the organisation: NASA</p>
+           <p><a href="missions.html" class="btn">More Info</a></p>
+         </div>
+       </div>
+
+       <div class="carousel-item">
+        <a href="#" title="Earth Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="'Space Engine' by K-putt">
+          <img src="images/image_processing/creative_commons/space_engine_by_k-putt.png" alt="planets">
+        </a>
+        <div class="carousel-caption">
+          <h5>Earth</h5>
+          <p>Find out the most asked questions of space and our history of organisations</p>
+          <p><a href="more.html" class="btn">More Info</a></p>
+        </div>
+       </div>
+      </div>
+<!--Left and right controls-->
+<a class="carousel-control-prev" href="#demo" data-slide="prev" role="button">
+  <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#demo" data-slide="next" role="button">
+  <span aria-hidden="true" class="carousel-control-next-icon"></span>
+</a>
+</div>
+<!--Footer-->
+<div class="row footer">
+<!--Footer NASA information-->
+  <div class="col-sm-6 col-lg-4">
+    <h5>About NASA</h5>
+      <p class="footer-text">NASA or 'National Aeronautics and Space Administration' is a space organisation which focuses on... </p>
+    </div>
+<!--Footer links to NASA website-->
+<div class="col-sm-6 col-lg-4">
+  <h5>NASA Links</h5>
+    <ul class="footer-links">
+      <li><a href="https://www.nasa.gov/about/index.html">About</a></li>
+      <li><a href="https://www.nasa.gov/about/contact/index.html">Contact</a></li>
+      <li><a href="https://www.shopnasa.com/">Stores</a></li>
+      <li><a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy</a></li>
+    </ul>
+  </div>
+<!--Footer Quick Links for website-->
+  <div class="col-sm-6 col-lg-4">
+    <h5>Quick Links</h5>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planets.html">Planets</a></li>
+        <li><a href="missions.html">Missions</a></li>
+        <li><a href="more.html">More</a></li>
+      </ul>
+    </div>
+  </div>  
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+ });
+</script>
+</body>
+

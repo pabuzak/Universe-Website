@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!--Title of website-->
+      <title>Universe</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Bootstrap 4 link to HTML-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!--CSS link to HTML-->
+      <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-sm bg-transparent sticky-top">
+    <div class="container-fluid">
+<!--Navigation Bar Website Name-->  
+      <div class="navbar-header">        
+        <a class="navbar-brand">Universe</a>
+      </div>
+<!--Navigation Bar Links-->
+      <ul class="navbar-nav">  
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Missions</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">More</a></li>
+      </ul>
+    </div>
+  </nav>
+<!--Carousel-->
+<div id="demo" class="carousel slide fixed" data-ride="carousel">
+<!--Indicators-->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+<!--The slideshow-->
+<div class="carousel-inner">
+  <div class="carousel-item active">
+   <img src="images/image_processing/creative_commons/mars_by_kevin_m._gill.jpg" alt="Mars">
+      <div class="carousel-caption">
+        <h5>Mars</h5>
+        <p>The fourth planet in our solar system and more commonly known as the "Red Planet"</p>
+        <p><a href="about.html" class="btn">More Info</a></p>
+          </div>
+        </div>
+
+       <div class="carousel-item">
+        <img src="images/image_processing/universe_sandbox/universe_sandbox5.jpg" alt="Space">
+       <div class="carousel-caption">
+         <h5>Milky Way Galaxy</h5>
+           <p>Explore outer space in our galaxy with missions from the organisation: NASA</p>
+           <p><a href="#" class="btn">More Info</a></p>
+         </div>
+       </div>
+
+       <div class="carousel-item">
+          <img src="images/image_processing/creative_commons/space_engine_by_k-putt.png" alt="Planets">
+        <div class="carousel-caption">
+          <h5>Earth</h5>
+          <p>Find out the most asked questions of space and our history of NASA</p>
+          <p><a href="about.html" class="btn">More Info</a></p>
+        </div>
+       </div>
+      </div>
+<!-- Left and right controls -->
+<a class="carousel-control-prev" href="#demo" data-slide="prev" role="button">
+  <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#demo" data-slide="next" role="button">
+  <span aria-hidden="true" class="carousel-control-next-icon"></span>
+</a>
+</div>
+</body>

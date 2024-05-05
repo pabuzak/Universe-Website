@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!--Title of website-->
+      <title>Universe</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Bootstrap 4 link to HTML-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!--CSS link to HTML-->
+      <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-md bg-dark fixed-top">
+    <div class="container-fluid">
+<!--Navigation Bar Website Name-->  
+      <div class="navbar-header">         
+        <a class="navbar-brand">Universe</a>
+      </div>
+<!--Navigation Bar Links-->
+      <ul class="navbar-nav">  
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="planets.html">Planets</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="missions.html">Missions</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="more.html">More</a></li>
+      </ul>
+    </div>
+  </nav>
+<!--Carousel-->
+<div id="demo" class="carousel slide fixed" data-ride="carousel">
+  <!--The slideshow-->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <a href="#" title="Earth Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="'Space Station Flight Over the Southern Tip of Italy' by NASA's Marshall Space Flight Center">
+     <img src="images/image_processing/creative_commons/space_station_flight_over_the_southern_tip_of_italy_by_nasa_marshall_space_flight_center.jpg" alt="mars">
+    </a>
+    <div class="carousel-caption">
+      <!-- Cards -->
+<div class="cardsection">
+  <!-- NASA Card -->
+  <div class="card1">
+    <a href="#" title="NASA Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="'NASA' by stefano.petraz">
+    <img class="card-img-top" src="images/image_processing/creative_commons/nasa_by_sterfano_petraz.jpg" alt="cimage1">
+     </a>
+    <div class="card-body">
+      <h4 class="card-title">NASA</h4>
+      <p class="card-text">The original website of NASA</p>
+      <a onclick="window.open('https://www.nasa.gov/')" target="_blank" href="https://www.nasa.gov/" class="btn">Learn More</a>
+    </div>
+  </div>
+  <!-- SpaceX Card -->
+    <div class="card2">
+      <a href="#" title="SpaceX Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="'The SpaceX Dragon capsule' by nsub1">
+      <img class="card-img-top" src="images/image_processing/creative_commons/the_spacex_dragon_capsule_by_nsub1.jpg" alt="cimage2">
+    </a>
+      <div class="card-body">
+        <h4 class="card-title">SpaceX</h4>
+        <p class="card-text">Space orgination founded by Elon Musk.</p>
+        <a onclick="window.open('https://www.spacex.com/')" target="_blank" href="https://www.spacex.com/" class="btn">Learn More</a>
+  </div>
+  </div>
+  <!-- Nasa Card -->
+    <div class="card3">
+      <a href="#" title="Solar System Image" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="'Space - Antennae Galaxies' by Trodel">
+      <img class="card-img-top" src="images/image_processing/creative_commons/space_antennae_galaxies_by_trodel.jpg" alt="cimage3">
+    </a>
+      <div class="card-body">
+        <h4 class="card-title">Solar System </h4>
+        <p class="card-text">Explore the solar system with NASA's program.</p>
+        <a onclick="window.open('https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/')" target="_blank" href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/" class="btn">See Profile</a>
+      </div>
+    </div>  
+  </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--Footer-->
+<div class="row footer">
+  <!--Footer NASA information-->
+    <div class="col-sm-6 col-lg-4">
+      <h5>About NASA</h5>
+        <p class="footer-text">NASA or 'National Aeronautics and Space Administration' is a space organisation which focuses on the civilian space program, aeronautic and space research.</p>
+      </div>
+<!--Footer links to NASA website-->
+<div class="col-sm-6 col-lg-4">
+<h5>NASA Links</h5>
+  <ul class="footer-links">
+    <li><a onclick="window.open('https://www.nasa.gov/about/index.html')" target="_blank" href="https://www.nasa.gov/about/index.html">About</a></li>
+    <li><a onclick="window.open('https://www.nasa.gov/about/contact/index.html')" target="_blank" href="https://www.nasa.gov/about/contact/index.html">Contact</a></li>
+    <li><a onclick="window.open('https://www.shopnasa.com/')" target="_blank" href="https://www.shopnasa.com/">Stores</a></li>
+    <li><a onclick="window.open('https://www.nasa.gov/about/highlights/HP_Privacy.html')" target="_blank" href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy</a></li>
+  </ul>
+</div>
+<!--Footer Quick Links for website-->
+<div class="col-sm-6 col-lg-4">
+  <h5>Quick Links</h5>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="planets.html">Planets</a></li>
+    <li><a href="missions.html">Missions</a></li>
+    <li><a href="more.html">More</a></li>
+  </ul>
+</div>
+</div>
+<script>
+$(document).ready(function(){
+$('[data-toggle="popover"]').popover();
+});
+</script>
+</body>
+</html>

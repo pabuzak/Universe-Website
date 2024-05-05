@@ -1,0 +1,108 @@
+/** Navigation Bar, Font, Font Colour, Font Size and Padding **/
+.navbar-nav li a{
+    color: white;
+    font-size: 1.15em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+/** Navigation Bar Nav Position **/
+.navbar-nav{
+    margin-right: 10%;
+    
+}
+
+/** Navigation Bar Header Position **/
+.navbar-header{
+    padding-left: 10%;
+    
+}
+
+/** Navigation Bar, Font, Font Colour, Font Size and Padding **/
+.navbar-brand{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    padding-left: 10%;
+}
+
+/** Navigation Bar Margin (top) **/
+.navbar{
+    margin-top: 3%;
+}
+
+/** Navigation Bar Margin (right) **/
+.nav{
+    margin-right: 10%;
+}
+
+/** Navigation Bar Font Hover Colour **/
+.nav-link:hover{
+    color:#aaa;
+}
+
+/** Navigation Bar Font Hover Colour **/
+.navbar-brand:hover{
+    color:white;
+}
+
+/** Make the Navigation Bar the same height and infront of the Carousel **/
+.carousel{
+    margin-top: -220px;
+
+}
+
+/** Remove white ling on the right side of the page **/
+html,body
+{
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
+}
+
+/** Carousel Caption Text **/
+.carousel-caption a{
+    margin-top: 15px;
+    color: #fff;
+    background: #1A1A23;
+    padding: 10px 20px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/** Carousel Caption Text Hover Background Colour **/
+.carousel-caption a:hover{
+    background: #e2e2df;
+}
+
+/** Carousel Caption Text **/
+.carousel-caption p{
+    margin: auto;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 3;
+    letter-spacing: 1px;
+    color: #aaa
+}
+
+/** Carousel Caption Text **/
+.carousel-caption h5{
+    font-size: 40px;
+    margin-top: 15px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 3px;
+}
+
+/** Caroulse Caption Text Position **/
+.carousel-caption{
+    bottom: 450px;
+}
+
+
+
